@@ -1,0 +1,54 @@
+.events {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 72px 150px 1394px 150px;
+}
+
+@media (max-width: 1439px) {
+  .events {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .events {
+    max-width: 736px;
+    padding: 88px 16px 626px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .events {
+    padding: 89px 16px 746px 16px;
+  }
+}
+
+.events__button {
+  width: $card-width;
+  height: 40px;
+  background-color: #3E99ED;
+  border: none;
+  @include  font-style ($size: 18px, $height: 24px);
+  @include flex($justify-content: center);
+  align-items: center;
+  color: $font-color-light;
+  border-radius: 24px;
+  margin: 50px auto 0 auto;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .events__button  {
+    width: $card-width-small;
+    height: 32px;
+    @include  font-style;
+  }
+}
+
+.events__button:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
