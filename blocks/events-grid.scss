@@ -8,18 +8,14 @@
   row-gap: 30px;
   padding: 0;
   margin: 0 auto;
-}
 
-@media (max-width: 1279px) {
-  .events-grid {
+  @media (max-width: 1279px) {
     grid-template-columns: repeat(2, min-content);
     grid-auto-rows: minmax(min-content, 346px);
     column-gap: 20px;
   }
-}
 
-@media (max-width: 767px) {
-  .events-grid {
+  @media (max-width: 767px) {
     max-width: $card-width-small;
     grid-template-columns: repeat(1, min-content);
     grid-auto-rows: min-content;

@@ -2,24 +2,18 @@
   margin: 0 auto;
   max-width: 1140px;
   padding: 72px 150px 1394px 150px;
-}
 
-@media (max-width: 1439px) {
-  .events {
+  @media (max-width: 1439px) {
     padding-right: 50px;
     padding-left: 50px;
   }
-}
 
-@media (max-width: 1279px) {
-  .events {
+  @media (max-width: 1279px) {
     max-width: 736px;
     padding: 88px 16px 626px 15px;
   }
-}
 
-@media (max-width: 767px) {
-  .events {
+  @media (max-width: 767px) {
     padding: 89px 16px 746px 16px;
   }
 }
@@ -37,10 +31,8 @@
   margin: 50px auto 0 auto;
   opacity: 1;
   transition: opacity 0.3s ease;
-}
 
-@media (max-width: 767px) {
-  .events__button  {
+  @media (max-width: 767px) {
     width: $card-width-small;
     height: 32px;
     @include  font-style;
