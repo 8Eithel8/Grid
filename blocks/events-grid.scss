@@ -1,0 +1,28 @@
+.events-grid {
+  max-width: 1140px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-auto-rows: min-content;
+  column-gap: 24px;
+  row-gap: 30px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 1279px) {
+  .events-grid {
+    grid-template-columns: repeat(2, min-content);
+    grid-auto-rows: minmax(min-content, 346px);
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .events-grid {
+    max-width: $card-width-small;
+    grid-template-columns: repeat(1, min-content);
+    grid-auto-rows: min-content;
+    row-gap: 22px;
+  }
+}
