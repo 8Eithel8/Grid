@@ -2,23 +2,23 @@
   opacity: 1;
   transition: opacity 0.3s ease;
   text-decoration: none;
-}
 
-.link-text:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-  outline: none;
-}
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    outline: none;
+  }
 
-.link-text:focus {
-  color: $color-focus;
-  outline: none;
-}
+  &:focus {
+    color: $color-focus;
+    outline: none;
+  }
 
-.link-text:focus > .card-event__organizer {
-  color: $color-focus;
-}
+  &:focus > .card-event__organizer {
+    color: $color-focus;
+  }
 
-.link-text:focus > .card-event__title {
-  color: $color-focus;
+  &:focus > .card-event__title {
+    color: $color-focus;
+  }
 }

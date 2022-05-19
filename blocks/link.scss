@@ -2,18 +2,18 @@
   opacity: 1;
   transition: opacity 0.3s ease;
   text-decoration: none;
-}
 
-.link:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
 
-.link:focus {
-  box-shadow: 0 5px 10px gray;
-  outline: none;
-}
+  &:focus {
+    box-shadow: 0 5px 10px gray;
+    outline: none;
+  }
 
-.link:active {
-  opacity: 0.4;
+  &:active {
+    opacity: 0.4;
+  }
 }
