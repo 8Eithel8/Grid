@@ -14,6 +14,11 @@
     outline: none;
   }
 
+  &:active {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
   &:focus > .card-event__organizer {
     color: $color-focus;
   }
