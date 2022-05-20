@@ -3,3 +3,4 @@ blocks/*.css.map
 helpers/*.css
 helpers/*.css.map
 .idea/
+node_modules/

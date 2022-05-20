@@ -85,15 +85,19 @@
 
 .card-event__link {
   display: block;
-  max-width: $card-width;
+  width: $card-width;
   min-height: 224px;
   border-radius: 14px 0 14px 14px;
   background-color: #EDF0F7;
   font-size: 0;
   text-decoration: none;
 
+  @media (max-width: 1279px) {
+    width: 358px;
+  }
+
   @media (max-width: 767px) {
-    max-width: $card-width-small;
+    width: $card-width-small;
     min-height: 176px;
     border-radius: 10px 0 10px 10px;
   }
@@ -240,10 +244,10 @@
 
 .card-event__logo {
   margin: 21px 0 0 23px;
+  width: 72px;
+  height: 15px;
 
   @media (max-width: 767px) {
-    width: 72px;
-    height: 15px;
     margin: 17px 0 5px 16px;
   }
 }
