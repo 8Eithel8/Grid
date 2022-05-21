@@ -13,6 +13,7 @@
 
 .card-event__header{
   @include flex;
+  min-height: 32px;
   gap: 10px;
   padding: 0 16px 4px 8px;
 
@@ -54,7 +55,6 @@
 
 .card-event__recommendation {
   box-sizing: border-box;
-  width: 122px;
   height: 21px;
   @include font-style ($size: 12px, $height: 12px);
   letter-spacing: 0.02em;
@@ -62,7 +62,7 @@
   color: $font-color-light;
   background: $color-light-blue;
   border-radius: 6px 6px 0 6px;
-  padding: 4px 9px 9px 9px;
+  padding: 5px 9px 0 9px;
   align-items: flex-start;
   margin: 9px 0 0 0;
   display: none;
@@ -71,9 +71,8 @@
 @media (max-width: 767px) {
   .card-event__recommendation  {
     @include font-style ($size: 10px, $height: 9px);
-    width: 100px;
     height: 18px;
-    padding: 4px 5px 4px 5px;
+    padding: 4px 5px 0 8px;
     border-radius: 4px 4px 0 4px;
     margin-top: 6px;
   }
@@ -85,7 +84,7 @@
 
 .card-event__link {
   display: block;
-  width: $card-width;
+  max-width: $card-width;
   min-height: 224px;
   border-radius: 14px 0 14px 14px;
   background-color: #EDF0F7;
@@ -93,11 +92,11 @@
   text-decoration: none;
 
   @media (max-width: 1279px) {
-    width: 358px;
+    max-width: 358px;
   }
 
   @media (max-width: 767px) {
-    width: $card-width-small;
+    max-width: $card-width-small;
     min-height: 176px;
     border-radius: 10px 0 10px 10px;
   }
@@ -117,7 +116,7 @@
 
 .card-event__image {
   width: $card-width;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 14px 0 14px 14px;
   background-color: #EDF0F7;
 
@@ -147,8 +146,8 @@
   position: absolute;
   top: 58px;
   right: 16px;
-  width: 73px;
-  height: 80px;
+  max-width: 73px;
+  min-height: 80px;
   background: #323233;
   opacity: 0.75;
   border-radius: 8px 0 8px 8px;
@@ -162,8 +161,8 @@
   @media (max-width: 767px) {
       @include font-style ($weight: 400, $size: 12px);
       padding: 2px 6px;
-      width: 62px;
-      height: 68px;
+      max-width: 62px;
+      min-height: 68px;
       top: 48px;
       right: 11px;
   }

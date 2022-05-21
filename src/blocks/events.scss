@@ -1,7 +1,7 @@
 .events {
   margin: 0 auto;
   max-width: 1140px;
-  padding: 72px 150px 1394px 150px;
+  padding: 72px 0 1394px 0;
 
   @media (max-width: 1439px) {
     padding-right: 50px;
@@ -19,21 +19,20 @@
 }
 
 .events__button {
-  width: $card-width;
-  height: 40px;
+  max-width: $card-width;
   background-color: #3E99ED;
   border: none;
   @include  font-style ($size: 18px, $height: 24px);
-  @include flex($justify-content: center);
-  align-items: center;
+  display: block;
   color: $font-color-light;
   border-radius: 24px;
   margin: 53px auto 0 auto;
+  padding: 7px 125px 9px 127px;
   opacity: 1;
   transition: opacity 0.3s ease;
 
   @media (max-width: 767px) {
-    width: $card-width-small;
+    max-width: $card-width-small;
     height: 32px;
     @include  font-style;
   }
