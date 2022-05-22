@@ -204,6 +204,12 @@
   line-height: 24px;
   color: $color-text-dark;
   margin: 10px 0 0 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
 
   @media (max-width: 767px) {
     @include font-style ($size: 18px, $height: 24px);
