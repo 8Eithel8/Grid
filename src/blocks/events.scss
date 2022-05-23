@@ -19,23 +19,24 @@
 }
 
 .events__button {
-  max-width: $card-width;
+  width: $card-width;
   background-color: #3E99ED;
   border: none;
   @include  font-style ($size: 18px, $height: 24px);
-  display: block;
+  display: flex;
+  justify-content: center;
   color: $font-color-light;
   border-radius: 24px;
   margin: 53px auto 0 auto;
-  padding: 7px 125px 9px 127px;
+  padding: 7px 0 9px 0;
   opacity: 1;
   transition: opacity 0.3s ease;
 
   @media (max-width: 767px) {
-    max-width: $card-width-small;
+    width: $card-width-small;
     height: 32px;
     @include  font-style;
-    padding: 7px 95px 9px 93px;
+    padding: 7px 0 9px 0;
   }
 }
 
