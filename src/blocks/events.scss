@@ -34,9 +34,7 @@
 
   @media (max-width: 767px) {
     width: $card-width-small;
-    height: 32px;
     @include  font-style;
-    padding: 7px 0 9px 0;
   }
 }
 
