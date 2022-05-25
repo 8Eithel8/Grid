@@ -1,7 +1,7 @@
 {
-  "name": "test_livelib",
+  "name": "Grid",
   "version": "1.0.0",
-  "description": "Тестовое задание LiveLib",
+  "description": "Построение сетки на grid",
   "main": "index.scss",
   "devDependencies": {
     "@babel/core": "^7.18.0",
@@ -28,14 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/8Eithel8/Test-LiveLib.git"
+    "url": "git+https://https://github.com/8Eithel8/Grid.git"
   },
   "author": "Aulitina",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/8Eithel8/Test-LiveLib/issues"
+    "url": "https://github.com/8Eithel8/Grid/issues"
   },
-  "homepage": "https://github.com/8Eithel8/Test-LiveLib#readme",
+  "homepage": "https://github.com/8Eithel8/Grid#readme",
   "dependencies": {
     "core-js": "^3.22.5",
     "gh-pages": "^4.0.0"

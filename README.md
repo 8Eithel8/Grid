@@ -13,4 +13,4 @@
 
 - сборка на webpack,
 
-https://8eithel8.github.io/Test-LiveLib/
+https://8eithel8.github.io/Grid/
