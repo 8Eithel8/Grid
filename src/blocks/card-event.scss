@@ -232,10 +232,12 @@
 }
 
 .card-event_color {
+  box-sizing: border-box;
   height: 224px;
   margin-top: 40px;
   background: linear-gradient(180deg, #52BBFA 0%, $color-light-blue 100%), $color-light-blue;
   border-radius: 14px;
+  padding-top: 35px;
 
   @media (max-width: 767px) {
     height: 184px;
